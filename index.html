@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Rajdhani:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Desafio - Maio</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__Titulo">
+            <p class="cabecalho__Titulo__Principal">Pomodoro</p>
+            <p class="cabecalho__Titulo__SubTitulo">Gerencie seu tempo de maneira mágica!</p>
+        </div>
+        <div class="cabecalho__Icone">
+            <img src="./img/Icon_1.png" alt="">
+            <img src="./img/Icon_2.png" alt="">
+            <img src="./img/Icon_3.png" alt="">
+        </div>
+    </header>
+    <main class="container">
+        <section class="container__Sessão">
+            <div class="container__Sessão__Info">
+                <div class="container__Sessão__Info__Titulo">
+                    <div>
+                        <p class="container__Sessão__Info__Titulo__Principal">Dados da sessão</p>
+                        <p class="container__Sessão__Info__Titulo__Subtitulo">Acompanhe os próximos cíclos</p>
+                    </div>
+                    <div>
+                        <img src="./img/Ampulheta.png" alt="">
+                    </div>
+                </div>
+                <div class="container__Sessão__Info__ModoAtual">
+                    <div>
+                        <p class="container__Sessão__Info__ModoAtual__Principal">Modo atual:</p>
+                        <p class="container__Sessão__Info__ModoAtual__Subtitulo">Cíclo atual do cronômetro</p>
+                    </div>
+                    <div>
+                        <span id="modo__atual"></span>
+                        <!-- <img src="./img/type_foco.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="container__Sessão__Info__ProximoModo">
+                    <div>
+                        <p class="container__Sessão__Info__ProximoModo__Principal">Próximo modo:</p>
+                        <p class="container__Sessão__Info__ProximoModo__Subtitulo">Qual cíclo será ativado</p>
+                    </div>
+                    <div>
+                        <span id="proximo__modo"></span>
+                        <!-- <img src="./img/type_pausa-longa.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+            <div class="container__Sessão__Cronometro">
+                <div id="circulo__Cronometro">
+                    <a href="#" class="container__Sessão__Cronometro__Botao" id="botao_Cronometro">Iniciar: Foco</a>
+                    <span class="container__Sessão__Cronometro_Relogio" id="relogio_Cronometro"></span>
+                </div>
+            </div>
+        </section>
+        <section class="container__Tarefas">
+            <div class="container__Tarefas__Titulo">
+                <div>
+                    <p class="container__Tarefas__Titulo__Principal">Lista de tarefas</p>
+                    <p class="container__Tarefas__Titulo__Subtitulo">Seus objetivos para essa sessão</p>
+                </div>
+                <div>
+                    <img src="./img/Foguete.png" alt="">
+                </div>
+            </div>
+            <div class="container__Tarefas__Checkbox">
+                <div class="container__Tarefas__Checkbox__Itens">
+                    <input type="checkbox" name="tarefas" id="tarefas" class="container__Tarefas__Checkbox__input">
+                    <label for="tarefas" class="container__Tarefas__Checkbox__label">Escrever e-mail importante</label>
+                </div>
+                <div class="container__Tarefas__Checkbox__Itens">
+                    <input type="checkbox" name="tarefas" id="tarefas" class="container__Tarefas__Checkbox__input">
+                    <label for="tarefas" class="container__Tarefas__Checkbox__label">Terminar redação</label>
+                </div>
+                <div class="container__Tarefas__Checkbox__Itens">
+                    <input type="checkbox" name="tarefas" id="tarefas" class="container__Tarefas__Checkbox__input">
+                    <label for="tarefas" class="container__Tarefas__Checkbox__label">Preparar vlog novo</label>
+                </div>
+                <div class="container__Tarefas__Checkbox__Itens">
+                    <input type="checkbox" name="tarefas" id="tarefas" class="container__Tarefas__Checkbox__input">
+                    <label for="tarefas" class="container__Tarefas__Checkbox__label">Seguir @ruy.dev no
+                        instagram</label>
+                </div>
+                <div class="container__Tarefas__Checkbox__Itens">
+                    <input type="checkbox" name="tarefas" id="tarefas" class="container__Tarefas__Checkbox__input">
+                    <label for="tarefas" class="container__Tarefas__Checkbox__label">Ir para a academia</label>
+                </div>
+            </div>
+            <div class="container__Tarefas__Input">
+                <input type="text" id="tarefa" placeholder="Nova tarefa" class="container__Tarefas__Input-Texto">
+                <a href="#" class="container__Tarefas__Input-Botao">Adicionar</a>
+            </div>
+        </section>
+    </main>
+    <script src="script/script.js" type="module"></script>
+</body>
+
+</html>

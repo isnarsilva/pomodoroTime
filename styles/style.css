@@ -1,0 +1,30 @@
+/* Imports */
+@import url("cabecalho.css");
+@import url("main.css");
+
+/* Variáveis */
+:root {
+    /* Colors */
+    --branco: #E4E4E7;
+    --preto: #000000;
+    --cinza: #A1A1AA;
+    --cinza-claro: #F4F4F5;
+    --cinza-escuro: #27272A;
+    --cinza-medio: #71717A;
+    --cinza-borda: #3F3F46;
+    --lime: #84CC16;
+
+
+    /* fonts */
+    --inter: 'Inter', sans-serif;
+    --rajdhani: 'Rajdhani', sans-serif;
+
+}
+
+body {
+    background: var(--preto);
+    font-family: var(--inter);
+    padding: 3rem 10rem;
+    color: var(--cinza);
+}
+

@@ -1,0 +1,233 @@
+.container {
+    display: flex;
+}
+
+/* Sessão */
+
+.container__Sessão {
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 12px;
+    margin-top: 3rem;
+    width: 50%;
+    margin-right: 1.1rem;
+    padding: 1.5rem;
+}
+
+.container__Sessão__Info__Titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cinza-escuro);
+    padding-bottom: 1.5rem;
+}
+
+.container__Sessão__Info__Titulo__Principal {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0.4rem;
+    color: var(--cinza);
+}
+
+.container__Sessão__Info__Titulo__Subtitulo {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-medio);
+}
+
+.container__Sessão__Info__ModoAtual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.container__Sessão__Info__ModoAtual__Principal {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    color: var(--cinza);
+}
+
+.container__Sessão__Info__ModoAtual__Subtitulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cinza-medio);
+}
+
+.container__Sessão__Info__ProximoModo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__Sessão__Info__ProximoModo__Principal {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    color: var(--cinza);
+}
+
+.container__Sessão__Info__ProximoModo__Subtitulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cinza-medio);
+}
+
+.container__Sessão__Cronometro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    
+}
+
+.container__Sessão__Cronometro__Border {
+    position: relative;
+}
+
+.container__Sessão__Cronometro__Border span {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    top: 30%;
+}
+
+.container__Sessão__circulo-animado {
+    stroke-dasharray: 628;
+    stroke-dashoffset: 628;
+    transition: all 1s linear;
+}
+
+/* .container__Sessão__Cronometro__Border {
+    display: flex;
+    width: 224px;
+    height: 224px;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--lime);
+    border-radius: 50%;
+    transform-origin: center center;
+    transform: rotate(0deg);
+} */
+
+.container__Sessão__Cronometro__Botao {
+    background: var(--lime);
+    color: var(--branco);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.container__Sessão__Cronometro__Timer {
+    color: var(--cinza-claro);
+    font-family: var(--rajdhani);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+/* Tarefas */
+
+.container__Tarefas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 12px;
+    margin-top: 3rem;
+    width: 50%;
+    margin-left: 1.1rem;
+    padding: 1.5rem;
+}
+
+.container__Tarefas__Titulo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cinza-escuro);
+    padding-bottom: 1.5rem;
+}
+
+.container__Tarefas__Titulo__Principal {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0.4rem;
+    color: var(--cinza);
+}
+
+.container__Tarefas__Checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    padding-bottom: 19rem;
+}
+
+.container__Tarefas__Checkbox__Itens {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.container__Tarefas__Checkbox__input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: var(--cinza-escuro);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 5px;
+}
+
+.container__Tarefas__Checkbox__label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: .5rem;
+}
+
+.container__Tarefas__Input {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.container__Tarefas__Input-Texto {
+    background: var(--cinza-escuro);
+    margin-right: 0.75rem;
+    border-radius: 4px;
+    width: 75%;
+    height: 2.5rem;
+    padding: .5rem;
+}
+
+.container__Tarefas__Input-Botao {
+    display: flex;
+    background: var(--lime);
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.8rem 0.75rem;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
